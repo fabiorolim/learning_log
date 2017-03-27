@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #minhas apps
     'learningng_logs',
+    'users',
 ]
 
 MIDDLEWARE = [
