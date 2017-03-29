@@ -23,5 +23,8 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^login$', login, {'template_name': 'users/login.html'}, name='login'),
+    #página de login usando view default,passamos um dicionário com o template
+    url(r'^login/$', login, {'template_name': 'users/login.html'}, name='login'),
+    url(r'^logout/$', views.logout_view, name='logout'),
+    url(r'^register/$', views.register, name='register')
 ]
